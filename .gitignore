@@ -1,0 +1,79 @@
+# Include dlls if they’re in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
+# Include dlls if they're in the CommonReferences directory
+!*CommonReferences/*.dll
+####################
+# VS Upgrade stuff #
+####################
+UpgradeLog.XML
+_UpgradeReport_Files/
+###############
+# Directories #
+###############
+bin/*
+!bin/roslyn/
+obj/
+TestResults/
+###################
+# Web publish log #
+###################
+*.Publish.xml
+#############
+# Resharper #
+#############
+/_ReSharper.*
+*.ReSharper.*
+############
+# Packages #
+############
+# it’s better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+######################
+# Logs and databases #
+######################
+*.log
+*.sqlite
+######################
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+[Oo]bj
+[Tt]est[Rr]esults
+*.suo
+*.user
+*.[Cc]ache
+*[Rr]esharper*
+packages
+NuGet.exe
+_[Ss]cripts
+*.nupkg
+*.ncrunchsolution
+*.dot[Cc]over
+.vs/
+#######################
+# License File Ignore #
+#######################
+/App_Data/Sitefinity/Sitefinity.lic
+#######################
+#        Solr         #
+#######################
+# Reinclude the conf directories
+/Solr/solr-8.6.2/server/solr/DiamantSugar_de/data/*
+/Solr/solr-8.6.2/server/solr/DiamantSugar_en/data/*
+
+/Solr/solr-8.6.2/bin/solr-8983.port
+!/Solr/solr-8.6.2/server/solr/DiamantSugar_de/conf/*
+!/Solr/solr-8.6.2/server/solr/DiamantSugar_en/conf/*
+
+/Solr/solr-8.6.2/server/logs/*
+/Solr/solr-8.6.2/server/tmp/*
